@@ -1,0 +1,1 @@
+module.exports.SEED = 'ClavE.Secreta-sIstemapago--Financiero';

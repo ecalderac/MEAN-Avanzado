@@ -14,9 +14,9 @@ let usuarioSchema = new Schema({
     email: { type: String, required: [true, 'El correo es necesario'], unique: true },
     password: { type: String, required: ['La contraseña es obligatoria'] },
     img: { type: String, required: false },
-    role: { type: String, default: 'USER_ROLE', enum: rolesValidos }
+    role: { type: String, default: 'USER_ROLE', enum: rolesValidos },
     // estado: { type: Boolean, default: true },
-    // google: { type: Boolean, default: false }
+    google: { type: Boolean, default: false }
 
 });
 

@@ -12,7 +12,7 @@ let usuarioSchema = new Schema({
 
     nombre: { type: String, required: [true, 'El nombre es necesario'] },
     email: { type: String, required: [true, 'El correo es necesario'], unique: true },
-    password: { type: String, required: ['La contraseña es obligatoria'] },
+    password: { type: String, required: [true, 'La contraseña es obligatoria'] },
     img: { type: String, required: false },
     role: { type: String, default: 'USER_ROLE', enum: rolesValidos },
     // estado: { type: Boolean, default: true },

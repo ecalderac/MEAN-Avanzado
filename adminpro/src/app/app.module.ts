@@ -16,7 +16,8 @@ import { RegisterComponent } from './login/register.component';
 import { ServiceModule } from './services/service.module';
 
 //temporal
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 
 @NgModule({
@@ -30,7 +31,9 @@ import { FormsModule } from '@angular/forms';
     APP_ROUTES,
     PagesModule,
     FormsModule,
-    ServiceModule
+    ReactiveFormsModule,
+    ServiceModule,
+    SweetAlert2Module
   ],
   providers: [],
   bootstrap: [AppComponent]

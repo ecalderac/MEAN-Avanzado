@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { PAGES_ROUTES } from './pages.routes';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
+
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
@@ -42,6 +45,7 @@ import { ProfileComponent } from './profile/profile.component';
         Graficas1Component
     ],
     imports: [
+        CommonModule,
         SharedModule,
         PAGES_ROUTES,
         FormsModule,

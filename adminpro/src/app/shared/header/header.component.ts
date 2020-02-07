@@ -15,8 +15,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.usuario = this._usuarioService.usuario;
-    console.log(this.usuario);
-    console.log(this.usuario.img);
   }
 
 }
